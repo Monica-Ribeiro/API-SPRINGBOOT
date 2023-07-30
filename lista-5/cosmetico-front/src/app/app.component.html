@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-3 mt-3 mb-3" *ngFor="let cosmetico of cosmeticos">
+      <div class="card" style="width: 18rem;">
+        <img src="{{cosmetico.imagem}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{cosmetico.nome}}</h5>
+          <span class="badge text-bg-success">{{cosmetico.preco}} R$</span>
+          <a href="#" class=" margin-50 btn btn-primary">Comprar</a>
+        </div>
+    </div>
+
+    </div>
+  </div>
+
+</div>
