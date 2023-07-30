@@ -1,5 +1,4 @@
 package com.example.lojasgamesback.service;
-
 import com.example.lojasgamesback.model.Jogo;
 import com.example.lojasgamesback.repository.BancoDeDados;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,5 +13,9 @@ public class JogoService {
 
     public List<Jogo> getAll(){
         return bancoDeDados.findAll();
+    }
+
+    public Jogo save(Jogo jogo){
+        return  bancoDeDados.save(jogo);
     }
 }
